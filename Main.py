@@ -3,6 +3,7 @@
 expensesList = [] #list of expenses in form of dictionary
 print(" Welcome to Expense Tracker : ")
 
+
 while True:
     print("====MENU====")
     print("1. Add Expense")
@@ -25,10 +26,12 @@ while True:
             "description": description,
             "amount": amount
         }
+        
 
         expensesList.append(expense)
         print(" \n DONE bro. Expense is added succesfully")
 
+    
 # 2. VIEW ALL EXPENSES
     elif(choice == 2):
         if( len(expensesList)==0 ):
